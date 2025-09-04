@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product-detail</title>
+    <link rel="icon" href="img/logo.svg" />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <div>
+      <div
+        class="border-1 border-[#9AA6B2] hover:border-[#1E93AB] duration-300 bg-transparent bg-opacity-22 backdrop-filter md:backdrop-blur-lg relative rounded-xl p-2 shadow-2xl max-w-5xl w-full overflow-auto max-h-[90vh] relative"
+      >
+        <!-- Close Button -->
+        <button
+          id="close-modal"
+          class="cursor-pointer absolute top-2 right-4 text-[#1E93AB] hover:text-white text-3xl font-bold"
+        >
+          &times;
+        </button>
+        <div class="flex flex-col md:flex-row p-6 gap-4">
+          <!-- Left Side (Image + Buttons) -->
+          <div class="md:flex-1">
+            <img
+              src="img/about.jpeg"
+              alt="Product Name"
+              class="w-full h-100 object-cover rounded-lg mb-4"
+            />
+            <div class="flex gap-2">
+              <button
+                class="cursor-pointer w-full bg-[#51829B] border-1 border-[#51829B] hover:border-white hover:bg-[#1E93AB] text-white hover:text-white py-2 px-4 rounded-full font-bold transition-colors duration-700"
+              >
+                Buy Now
+              </button>
+              <button
+                class="cursor-pointer w-full font-bold bg-gray text-[#1E93AB] hover:text-white py-2 px-4 rounded-full hover:bg-[#1E93AB] border-1 border-[#9AA6B2] hover:border-[#51829B] transition-colors duration-700"
+              >
+                Contact Us
+              </button>
+            </div>
+          </div>
+          <!-- Right Side (Details) -->
+          <div class="md:flex-1">
+            <h2 class="text-2xl font-bold mb-2 text-[#1E93AB]">Product Name</h2>
+            <p class="text-white font-bold mb-4">
+              This is the product description. Replace it with your real
+              content.
+            </p>
+            <div class="flex gap-4 mb-4 flex-wrap text-[#1E93AB]">
+              <div class="tex-[#1E93AB]">
+                <span class="font-bold text-[#1E93AB]">Price:</span> $100
+              </div>
+              <div class="text-[#1E93AB]">
+                <span class="font-bold text-[#1E93AB]">Availability:</span> In
+                Stock
+              </div>
+            </div>
+            <!-- Colors -->
+            <div class="mb-4">
+              <span class="font-bold text-[#1E93AB]">Colors:</span>
+              <div class="flex gap-2 mt-2">
+                <button
+                  class="cursor-pointer text-white w-6 h-6 rounded-full"
+                  style="background-color: red"
+                ></button>
+                <button
+                  class="cursor-pointer text-white w-6 h-6 rounded-full"
+                  style="background-color: blue"
+                ></button>
+                <button
+                  class="cursor-pointer text-white w-6 h-6 rounded-full"
+                  style="background-color: green"
+                ></button>
+              </div>
+            </div>
+            <!-- Sizes -->
+            <div class="mb-4">
+              <span class="font-bold text-white">Sizes:</span>
+              <div class="flex gap-2 mt-2 flex-wrap">
+                <button
+                  class="cursor-pointer text-white bg-[#51829B] py-2 px-4 rounded-full font-bold hover:bg-[#1E93AB]"
+                >
+                  S
+                </button>
+                <button
+                  class="cursor-pointer text-white bg-[#51829B] py-2 px-4 rounded-full font-bold hover:bg-[#1E93AB]"
+                >
+                  M
+                </button>
+                <button
+                  class="cursor-pointer text-white bg-[#51829B] py-2 px-4 rounded-full font-bold hover:bg-[#1E93AB]"
+                >
+                  L
+                </button>
+                <button
+                  class="cursor-pointer text-white bg-[#51829B] py-2 px-4 rounded-full font-bold hover:bg-[#1E93AB]"
+                >
+                  XL
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
