@@ -1,4 +1,3 @@
-
   // Fetch product data
   async function getProducts() {
     const res = await fetch('products.json');
@@ -10,15 +9,13 @@
     const products = await getProducts();
     const product = products.find(p => p.id === productId);
     if (!product) return;
-
-    // Remove existing modal if any
     const existingModal = document.querySelector('#product-modal');
     if (existingModal) existingModal.remove();
 
     const modal = document.createElement('div');
     modal.id = 'product-modal';
     modal.classList.add('fixed', 'inset-0', 'bg-black/50', 'flex', 'items-center', 'justify-center', 'z-50', 'p-4');
-
+    // using modal.innerHTML all the code to this play all class
     modal.innerHTML = `
       <div class="border-1 border-[#9AA6B2] hover:border-[#1E93AB] duration-300 bg-transparent bg-opacity-22 backdrop-filter md:backdrop-blur-lg relative rounded-xl p-2 shadow-2xl max-w-5xl w-full overflow-auto max-h-[90vh] relative">
         <button id="close-modal" class="cursor-pointer absolute top-2 right-4 text-[#1E93AB] hover:text-white text-3xl font-bold">&times;</button>
@@ -55,17 +52,16 @@
         </div>
       </div>
     `;
-    
+    // using document.body.appendchild
     document.body.appendChild(modal);
-    // Close modal
+    // document.getElementId => Close modal
     document.getElementById('close-modal').addEventListener('click', () => modal.remove());
     modal.addEventListener('click', e => { if(e.target === modal) modal.remove(); });
   }
-
-  // Event listeners for all buttons
+  // add-to-cart-btn for the class for all button
   document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const id = parseInt(btn.dataset.id);
       showProductModal(id);
     });
-  });
+  });  

@@ -1,5 +1,6 @@
 [
   {
+    
     "id": 1,
     "name": "Premium Sofa1",
     "price":  400.99,
@@ -134,7 +135,7 @@
     "id": 13,
     "name": "Premium Chair3",
     "price": 399.99,
-    "originalPrice": 320.99,
+    "originalPrice": 499.99,
     "image": "img/products/chairs3.avif",
     "description": "New Product the best Decor your house in the New Product The Modern Scandinavian chair, crafted by furniture , is the epitome of minimalist elegance, bringing a touch of Nordic charm to your living space. Crafted with precision and attention to detail, this bed seamlessly blends comfort and style, making it the perfect centerpiece for any contemporary home.",
     "availability": "In Stock",
@@ -150,7 +151,7 @@
     "originalPrice": 320.99,
     "image": "img/products/chairs6.avif",
     "description": "New Product the best Decor your house iNew Product The Modern Scandinavian chair, crafted by furniture , is the epitome of minimalist elegance, bringing a touch of Nordic charm to your living space. Crafted with precision and attention to detail, this bed seamlessly blends comfort and style, making it the perfect centerpiece for any contemporary home.",
-    "availability": "In Stock",
+    "availability": "New ",
     "colors": ["#000000", "#FF0000", "#0000FF", "#FFFF00"],
     "sizes": ["L", "XXL"],
     "reviews": 201,
